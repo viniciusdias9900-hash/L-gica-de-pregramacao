@@ -1,0 +1,11 @@
+def multiplicacao(a, b):
+    return a * b
+
+resultado = multiplicacao(5, 3)
+print(resultado)
+
+def prazer(meunome):
+    return("Olá,  Marcos")
+print(prazer("Marcos"))
+
+

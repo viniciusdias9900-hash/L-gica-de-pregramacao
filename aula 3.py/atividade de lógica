@@ -1,0 +1,61 @@
+def finalizar_vendas2(produtos, precos, descontos):
+    """
+    Realiza a finalização de vendas.
+
+    parametro 1: produtos
+    parametro 2: precos
+    parametro 3: descontos
+    """
+
+    contador = 0
+    precofinal = 0.00
+
+    for produto in produtos:
+        preco = precos[contador] - descontos[contador]
+        print(f"{produto}: R$ {preco:.2f}")
+
+        precofinal += preco
+        contador += 1
+
+    print(f"O preço final será R$ {precofinal:.2f}")    
+
+
+
+
+
+# TESTE 1 - Todos os produtos com valor negativo
+def teste_todos_produtos_valor_negativo():
+    produtos = ["Camisa", "Calça", "Tênis"]
+    precos = [-50.00, -100.00, -200.00]
+    descontos = [0.00, 0.00, 0.00]
+
+    for i in range(len(produtos)):
+        preco = precos[i] - descontos[i]
+        assert preco < 0, "O preço não é negativo"
+
+    finalizar_vendas2(produtos, precos, descontos)
+
+
+
+
+
+# TESTE 2 - Mais produtos que descontos
+def teste_mais_produtos_que_descontos():
+    produtos = ["Camisa", "Calça", "Tênis"]
+    precos = [50.00, 100.00, 200.00]
+    descontos = [5.00, 10.00]
+
+    assert finalizar_vendas2
+
+
+
+# agora e caso tenha mais produtos que discontos
+
+
+# TESTE 3 - Mais descontos que produtos
+def teste_mais_descontos_que_produtos():
+    produtos = ["Camisa", "Calça"]
+    precos = [50.00, 100.00]
+    descontos = [5.00, 10.00, 20.00]
+
+    

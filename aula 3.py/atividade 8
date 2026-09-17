@@ -1,0 +1,13 @@
+# def + nome da função + () : 
+def soma():
+     print(4 + 2)
+
+# como executar uma função
+soma()
+soma()
+
+
+def soma_dois_numeros(numero1, numero2):
+     print(numero1+ numero2)
+
+soma_dois_numeros(6, 7) 

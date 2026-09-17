@@ -1,0 +1,12 @@
+lista = [6, 4, 7, 2, 1, 1, 1, "ola", 96]
+
+for item in lista:
+    print("item", item)
+
+lista = [6, 4, 7, 2, 1, 1, 1, "ola", 96]
+
+i = 0
+
+while i < 3:
+    print(lista[i])
+    i += 1

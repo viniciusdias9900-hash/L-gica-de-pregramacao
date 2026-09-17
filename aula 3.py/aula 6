@@ -1,0 +1,40 @@
+
+
+
+def exibe_multiplicacao(numeroA, numeroB, numeroC):
+    # DOCSTRING / DOCUMENTAÇÃO
+    """
+    Recebe três númerose exibe o resultado da multiplicação.
+
+    O resultado não pode ser impar, caso seja, pegamos o próximo número par.
+
+    :param numeroA: Represta o Imposto A.
+    :param numeroB: Represta o Imposto B.
+    :param numeroC: Represta o Imposto C.
+    """
+    resultado = numeroA * numeroB * numeroC
+
+    if resultado % 2 != 0:
+        resultado = resultado + 1
+   
+    return resultado 
+# exibe_multiplicacao(1, 2,3)
+
+
+def _test_exibe_multiplicacao_numero_par_falha():
+    assert exibe_multiplicacao(1, 2, 3) == 10
+
+_test_exibe_multiplicacao_numero_par_falha()    
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+def exibe_subtracao(numeroA, numeroB):
+    resultado = numeroA - numeroB
+    return resultado
+
+def _test_exibe_subtracao_sucesso():
+    assert exibe_subtracao(10, 10) == 0, "O resultado não é zero"
+    assert exibe_subtracao(10, 10) == 0, "O resultado não é zero"
+
+_test_exibe_subtracao_sucesso()
+
+
+# segunda atividade 
+
+
+
+

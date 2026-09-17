@@ -1,0 +1,10 @@
+lista = [6, 4, 7, 2, 1, 1, 1, "ola", 96]
+print(lista[0])
+
+lista = [6, 4, 7, 2, 1, 1, 1, "ola", 96]
+print(lista[2])
+
+lista = [6, 4, 7, 2, 1, 1, 1, "ola", 96]
+print(lista[3])
+
+print(len(lista))
